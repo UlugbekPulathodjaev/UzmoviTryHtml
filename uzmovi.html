@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        * {
+            background-color: dimgrey;
+        }
+    </style>
+  </head>
+
+<body style="background-color: dimgrey;">
+<div class="container">
+
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" style="background-color:rgb(87, 86, 86)" >
+              <a class="navbar-brand"> <img src="Images/nav-logo.gif" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Bosh sahifa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Janr
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">
+                        <div class="list-group d-flex">
+                            <button type="button" class="list-group-item list-group-item-action active" aria-current="false">
+                              Kino yangiliklari
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action">Tarjima kinolar</button>
+                            <button type="button" class="list-group-item list-group-item-action">Premyeralar</button>
+                            <button type="button" class="list-group-item list-group-item-action">Hind kinolari</button>
+                            <button type="button" class="list-group-item list-group-item-action">Multfilm</button>
+                          </div>
+                      </a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Seriallar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Janr
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                            <div class="list-group d-flex">
+                                <button type="button" class="list-group-item list-group-item-action active" aria-current="false">
+                                  Drama
+                                </button>
+                                <button type="button" class="list-group-item list-group-item-action">Jinoyat-qidiruv</button>
+                                <button type="button" class="list-group-item list-group-item-action">Jangari</button>
+                                <button type="button" class="list-group-item list-group-item-action">Komediya</button>
+                                <button type="button" class="list-group-item list-group-item-action">Hujjatli film</button>
+                              </div>
+                          </a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Yil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                            <div class="list-group d-flex">
+                                <button type="button" class="list-group-item list-group-item-action active" aria-current="false">
+                                  2019
+                                </button>
+                                <button type="button" class="list-group-item list-group-item-action">2020</button>
+                                <button type="button" class="list-group-item list-group-item-action">2021</button>
+                                <button type="button" class="list-group-item list-group-item-action">2022</button>
+                                <button type="button" class="list-group-item list-group-item-action">2023</button>
+                              </div>
+                          </a></li>
+                    </ul>
+                  </li> 
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mamlakat
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                            <div class="list-group d-flex">
+                                <button type="button" class="list-group-item list-group-item-action active" aria-current="false">
+                                  O'zbekiston
+                                </button>
+                                <button type="button" class="list-group-item list-group-item-action">Qozog'iston</button>
+                                <button type="button" class="list-group-item list-group-item-action">Rossiya</button>
+                                <button type="button" class="list-group-item list-group-item-action">USA</button>
+                                <button type="button" class="list-group-item list-group-item-action">Xitoy</button>
+                            </div>
+                        </a></li>
+                    </ul>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kino yangiliklar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" style="background-color: rgb(25, 132, 194);" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+
+          </svg> Bizga telegramda qo'shiling</button>
+    </div>
+
+    <div style="background-color: dimgrey;">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid" style="background-color: dimgrey;">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Film qidirish..." aria-label="Film qidirish">
+
+                <button style="background-color: dimgray; color: aqua;" class="btn btn-outline-success" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>    
+                </button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+    <p style="color: aliceblue;">Premyera</p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/837db2fae491f356450772af0934bd04.jpg" class="d-block w-100" alt="maxluq" style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/39c3c3037e3e6f135aef941d58d8f1c6.jpg" class="d-block w-100" alt="..."  style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/d.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/download.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/downsload.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/s.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <h1>Tarjima kinolar</h1>
+
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div style="display: flex; justify-content: space-around" class="carousel-item active">
+            <div class="card" style="width: 13rem;">
+                <img src="Images/ghost.jpg" class="d-block w-100" alt="...">
+                <div class="card-body">
+                  <a href="http://uzmovi.com/tarjima-kinolarri/5946-uyimizdagi-arvoh-bizda-arvoh-rux-bor-premyera.html" class="btn btn-primary">We have a dangerous ghost</a>
+                </div>
+            </div> 
+
+            <div class="card" style="width: 13rem;">
+                <img src="Images/dark assert.jpg" class="d-block w-100" alt="...">
+                <div class="card-body">
+                  <a href="http://uzmovi.com/tarjima-kinolarri/5943-kirish-kodi-premyera.html" class="btn btn-primary">Dark assert premyera</a>
+                </div>
+            </div> 
+            
+            <div class="card" style="width: 13rem;">
+                <img src="Images/murder.jpg" class="d-block w-100" alt="...">
+                <div class="card-body">
+                  <a href="http://uzmovi.com/tarjima-kinolarri/5945-parijdagi-qotillik-sirli-qotillik-2-premyera.html" class="btn btn-primary">Parijdagi qotillik siri</a>
+                </div>
+            </div> 
+            
+            <div class="card" style="width: 13rem;">
+                <img src="Images/ghost.jpg" class="d-block w-100" alt="...">
+                <div class="card-body">
+                  <a href="http://uzmovi.com/tarjima-kinolarri/5946-uyimizdagi-arvoh-bizda-arvoh-rux-bor-premyera.html" class="btn btn-primary">We have a dangerous ghost</a>
+                </div>
+            </div> 
+            
+            
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  </body>
+</html>
